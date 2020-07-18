@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="751.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="103.0" layoutY="14.0" prefHeight="53.0" prefWidth="405.0" text="Travel Experts" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="48.0" />
+         </font>
+      </Label>
+      <TabPane layoutY="87.0" prefHeight="578.0" prefWidth="620.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="86.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="87.0">
+        <tabs>
+          <Tab text="Add">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="59.0" layoutY="55.0" prefHeight="467.0" prefWidth="775.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab text="Agent">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField fx:id="tfAgentId" layoutX="69.0" layoutY="121.0" />
+                                          <TextField fx:id="tfAgentFirstName" layoutX="69.0" layoutY="197.0" />
+                                          <TextField fx:id="tfAgentMiddileInitial" layoutX="69.0" layoutY="274.0" />
+                                          <TextField fx:id="tfAgentLastName" layoutX="69.0" layoutY="356.0" />
+                                          <TextField fx:id="tfAgentPhone" layoutX="373.0" layoutY="121.0" />
+                                          <TextField fx:id="tfAgentEmail" layoutX="373.0" layoutY="197.0" />
+                                          <TextField fx:id="tfAgentPosition" layoutX="373.0" layoutY="274.0" />
+                                          <TextField fx:id="tfAgencyID" layoutX="373.0" layoutY="356.0" />
+                                          <Label alignment="CENTER" layoutX="71.0" layoutY="87.0" prefHeight="25.0" prefWidth="145.0" text="Agent ID" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="71.0" layoutY="161.0" prefHeight="25.0" prefWidth="145.0" text="First Name" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="71.0" layoutY="247.0" prefHeight="25.0" prefWidth="145.0" text="Middle Initial" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="71.0" layoutY="328.0" prefHeight="25.0" prefWidth="145.0" text="Last Name" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="355.0" layoutY="83.0" prefHeight="35.0" prefWidth="186.0" text="Business Phone" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="375.0" layoutY="161.0" prefHeight="25.0" prefWidth="145.0" text="Email" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="375.0" layoutY="247.0" prefHeight="25.0" prefWidth="145.0" text="Position" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="375.0" layoutY="328.0" prefHeight="25.0" prefWidth="145.0" text="Agency ID" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="207.0" layoutY="28.0" prefHeight="42.0" prefWidth="206.0" text="Add a New Agent" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold Italic" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="btnAddAgent" layoutX="58.0" layoutY="431.0" mnemonicParsing="false" onMouseClicked="#addAgentClicked" prefHeight="50.0" prefWidth="119.0" text="Submit" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="Booking">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label alignment="CENTER" layoutX="142.0" layoutY="6.0" prefHeight="42.0" prefWidth="315.0" text="Add a New Booking" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold Italic" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="btnAddBooking" layoutX="60.0" layoutY="422.0" mnemonicParsing="false" onMouseClicked="#addBookingClicked" prefHeight="50.0" prefWidth="119.0" text="Submit" />
+                                          <Label alignment="CENTER" layoutX="64.0" layoutY="110.0" prefHeight="30.0" prefWidth="112.0" text="Booking ID">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="64.0" layoutY="173.0" prefHeight="30.0" prefWidth="112.0" text="Booking Date">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="55.0" layoutY="243.0" prefHeight="30.0" prefWidth="159.0" text="Booking Number">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="60.0" layoutY="320.0" prefHeight="30.0" prefWidth="150.0" text="Traveler Count">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="369.0" layoutY="245.0" prefHeight="30.0" prefWidth="112.0" text="Package ID">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="375.0" layoutY="173.0" prefHeight="30.0" prefWidth="112.0" text="Trip Type ID">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="369.0" layoutY="110.0" prefHeight="30.0" prefWidth="112.0" text="Customer ID">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="tfBookingId" layoutX="61.0" layoutY="140.0" />
+                                          <TextField fx:id="tfBookingNo" layoutX="61.0" layoutY="273.0" />
+                                          <TextField fx:id="tfTravelerCount" layoutX="60.0" layoutY="350.0" />
+                                          <TextField fx:id="tfCustomerIdBooking" layoutX="350.0" layoutY="140.0" />
+                                          <TextField fx:id="tfTripTypeId" layoutX="350.0" layoutY="219.0" />
+                                          <TextField fx:id="tfPackageId" layoutX="351.0" layoutY="273.0" />
+                                          <DatePicker fx:id="dpBookingDate" layoutX="47.0" layoutY="206.0" />
+                                          <Label alignment="CENTER" layoutX="369.0" layoutY="191.0" prefHeight="30.0" prefWidth="112.0" text="(B,L,G)">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                            <Tab text="Customer">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label alignment="CENTER" layoutX="143.0" layoutY="14.0" prefHeight="42.0" prefWidth="315.0" text="Add a New Customer" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold Italic" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="btnAddCustomer" layoutX="51.0" layoutY="415.0" mnemonicParsing="false" onMouseClicked="#addCustomerClicked" prefHeight="50.0" prefWidth="119.0" text="Submit" />
+                                          <Label alignment="CENTER" layoutX="55.0" layoutY="73.0" prefHeight="30.0" prefWidth="112.0" text="Customer ID">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="55.0" layoutY="147.0" prefHeight="30.0" prefWidth="112.0" text="First Name">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="64.0" layoutY="223.0" prefHeight="30.0" prefWidth="112.0" text="Last Name">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="64.0" layoutY="313.0" prefHeight="30.0" prefWidth="112.0" text="Address">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="244.0" layoutY="313.0" prefHeight="30.0" prefWidth="112.0" text="Country">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="244.0" layoutY="223.0" prefHeight="30.0" prefWidth="112.0" text="Postal Code">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="244.0" layoutY="147.0" prefHeight="30.0" prefWidth="112.0" text="Province">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="236.0" layoutY="73.0" prefHeight="30.0" prefWidth="112.0" text="City">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="438.0" layoutY="313.0" prefHeight="30.0" prefWidth="112.0" text="Agent ID">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="438.0" layoutY="223.0" prefHeight="30.0" prefWidth="112.0" text="Email">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="429.0" layoutY="147.0" prefHeight="30.0" prefWidth="131.0" text="Business Phone">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="439.0" layoutY="73.0" prefHeight="30.0" prefWidth="112.0" text="Home Phone">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="tfCustomerId" layoutX="46.0" layoutY="111.0" />
+                                          <TextField fx:id="tfCustFirstName" layoutX="45.0" layoutY="185.0" />
+                                          <TextField fx:id="tfCustLastName" layoutX="45.0" layoutY="272.0" />
+                                          <TextField fx:id="tfCustAddress" layoutX="45.0" layoutY="353.0" />
+                                          <TextField fx:id="tfCustCity" layoutX="226.0" layoutY="111.0" />
+                                          <TextField fx:id="tfCustProvince" layoutX="225.0" layoutY="185.0" />
+                                          <TextField fx:id="tfCustPostalCode" layoutX="225.0" layoutY="272.0" />
+                                          <TextField fx:id="tfCustCountry" layoutX="236.0" layoutY="353.0" />
+                                          <TextField fx:id="tfCustHomePhone" layoutX="420.0" layoutY="111.0" />
+                                          <TextField fx:id="tfCustBusinessPhone" layoutX="420.0" layoutY="185.0" />
+                                          <TextField fx:id="tfCustEmail" layoutX="420.0" layoutY="272.0" />
+                                          <TextField fx:id="tfCustAgentId" layoutX="420.0" layoutY="353.0" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="Product">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label alignment="CENTER" layoutX="153.0" layoutY="107.0" prefHeight="42.0" prefWidth="315.0" text="Add a New Product" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold Italic" size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Button fx:id="btnAddProduct" layoutX="111.0" layoutY="382.0" mnemonicParsing="false" onMouseClicked="#addProductClicked" prefHeight="50.0" prefWidth="119.0" text="Submit" />
+                                          <Label alignment="CENTER" layoutX="115.0" layoutY="230.0" prefHeight="30.0" prefWidth="112.0" text="Product ID">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="CENTER" layoutX="321.0" layoutY="230.0" prefHeight="30.0" prefWidth="170.0" text="Product Name">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="tfProductId" layoutX="96.0" layoutY="284.0" />
+                                          <TextField fx:id="tfProductName" layoutX="332.0" layoutY="284.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Edit">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="54.0" layoutY="35.0" prefHeight="369.6" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab text="Agents">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 <TableView fx:id="tblAgents" layoutX="141.0" layoutY="79.0" prefHeight="491.0" prefWidth="604.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+                                    <columns>
+                                       <TableColumn fx:id="agentidColumn" prefWidth="62.400022864341736" text="Agent Id" />
+                                       <TableColumn fx:id="firstNameColumn" prefWidth="74.40001678466797" text="First Name" />
+                                       <TableColumn fx:id="middleInitialColumn" prefWidth="84.0" text="Middle Initial" />
+                                       <TableColumn fx:id="lastNameColumn" prefWidth="83.199951171875" text="Last Name" />
+                                       <TableColumn fx:id="busPhoneColumn" prefWidth="74.39996337890625" text="Phone" />
+                                       <TableColumn fx:id="emailColumn" prefWidth="80.800048828125" text="Email" />
+                                       <TableColumn fx:id="agtPositionColumn" minWidth="0.0" prefWidth="75.20004272460938" text="Position" />
+                                       <TableColumn fx:id="agencyIdColumn" prefWidth="68.79998779296875" text="AgencyId" />
+                                    </columns>
+                                 </TableView>
+                              </content>
+                            </Tab>
+                              <Tab text="Bookings">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="tblBookings" layoutX="233.0" layoutY="77.0" prefHeight="342.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columns>
+                                              <TableColumn fx:id="colBookingId" prefWidth="67.99997103214264" text="Booking ID" />
+                                              <TableColumn fx:id="colBookingDate" prefWidth="85.59990692138672" text="Booking Date" />
+                                                <TableColumn fx:id="colBookingNumber" prefWidth="108.79998779296875" text="Booking Number" />
+                                                <TableColumn fx:id="colTravelerCount" prefWidth="97.60003662109375" text="Traveler Count" />
+                                                <TableColumn fx:id="colCustomerId" prefWidth="84.79998779296875" text="Customer ID" />
+                                                <TableColumn fx:id="colTripTypeId" prefWidth="76.80007934570312" text=" Trip Type ID" />
+                                                <TableColumn fx:id="colPackageId" prefWidth="81.5999755859375" text="Package ID" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Customers">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                    <TableView fx:id="ctableview" layoutX="141.0" layoutY="79.0" prefHeight="370.0" prefWidth="700.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+                                        <columns>
+                                            <TableColumn fx:id="customeridColumn" prefWidth="62.400022864341736" text="CustomerId" />
+                                            <TableColumn fx:id="cfirstNameColumn" prefWidth="91.9999771118164" text="CustFirstName" />
+                                            <TableColumn fx:id="clastNameColumn" prefWidth="97.5999755859375" text="CustLastName" />
+                                            <TableColumn fx:id="addressColumn" prefWidth="99.20001220703125" text="CustAddress" />
+                                            <TableColumn fx:id="cityColumn" prefWidth="96.79998779296875" text="CustCity" />
+                                            <TableColumn fx:id="provColumn" prefWidth="90.39999389648438" text="CustProv" />
+                                            <TableColumn fx:id="postalColumn" prefWidth="91.2000732421875" text="CustPostal" />
+                                            <TableColumn fx:id="countryColumn" prefWidth="81.599853515625" text="CustCountry" />
+                                            <TableColumn fx:id="homePhoneColumn" prefWidth="81.599853515625" text="CustHomePhone" />
+                                            <TableColumn fx:id="cbusPhoneColumn" prefWidth="81.599853515625" text="CustBusPhone" />
+                                            <TableColumn fx:id="cemailColumn" prefWidth="81.599853515625" text="CustEmail" />
+                                            <TableColumn fx:id="agentIdColumn" prefWidth="81.599853515625" text="AgentId" />
+                                        </columns>
+                                    </TableView>
+                                </content>
+                              </Tab>
+                            <Tab text="Products">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView fx:id="tblProducts" layoutX="102.0" layoutY="50.0" onMouseClicked="#productsTableClicked" prefHeight="340.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columns>
+                                              <TableColumn fx:id="colProductId" prefWidth="75.0" text="Product Id" />
+                                              <TableColumn fx:id="colProdName" prefWidth="75.0" text="Product Name" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="btnExit" layoutX="384.0" layoutY="679.0" mnemonicParsing="false" onMouseClicked="#btnExit" prefHeight="51.0" prefWidth="197.0" text="Exit">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="678.0" prefHeight="53.0" prefWidth="88.0" text="Copyright 2020" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnReloadPage" layoutX="162.0" layoutY="679.0" mnemonicParsing="false" onMouseClicked="#reloadPageClicked" prefHeight="51.0" prefWidth="185.0" text="Reload Page">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
